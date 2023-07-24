@@ -272,10 +272,10 @@
         </p>
         <div class="">
           <div class="flex lg:flex-row flex-col gap-9 mx-auto justify-center">
-            <div
-              class="card w-[380px] card-compact bg-base-100 drop-shadow-xl p-6"
-            >
-              <figure><img src="./images/news-1.png" alt="Shoes" /></figure>
+            <div class="card card-compact bg-base-100 drop-shadow-xl p-6">
+              <figure>
+                <img class="w-full" src="./images/news-1.png" alt="Shoes" />
+              </figure>
               <div class="space-y-3 mt-3">
                 <p class="text-left">Feb 05, 2027</p>
                 <h2 class="card-title text-left">
@@ -288,10 +288,10 @@
                 <p class="underline"><a href="">Learn More</a></p>
               </div>
             </div>
-            <div
-              class="card w-[380px] card-compact bg-base-100 drop-shadow-xl p-6"
-            >
-              <figure><img src="./images/news-2.png" alt="Shoes" /></figure>
+            <div class="card card-compact bg-base-100 drop-shadow-xl p-6">
+              <figure>
+                <img class="w-full" src="./images/news-2.png" alt="Shoes" />
+              </figure>
               <div class="space-y-3 mt-3">
                 <p class="text-left">Feb 05, 2027</p>
                 <h2 class="card-title text-left">
@@ -304,10 +304,10 @@
                 <p class="underline"><a href="">Learn More</a></p>
               </div>
             </div>
-            <div
-              class="card w-[380px] card-compact bg-base-100 drop-shadow-xl p-6"
-            >
-              <figure><img src="./images/news-3.png" alt="Shoes" /></figure>
+            <div class="card card-compact bg-base-100 drop-shadow-xl p-6">
+              <figure>
+                <img class="w-full" src="./images/news-3.png" alt="Shoes" />
+              </figure>
               <div class="space-y-3 mt-3">
                 <p class="text-left">Feb 05, 2027</p>
                 <h2 class="card-title text-left">
@@ -324,6 +324,67 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- footer section -->
+    <footer class="container mx-auto p-10 bg-base-200">
+      <div class="flex justify-between lg:flex-row flex-col">
+        <div class="flex-1 mx-auto lg:ml-6 mb-6">
+          <img src="./images/cup.png" alt="" />
+        </div>
+        <div class="flex flex-1 items-center justify-center gap-5">
+          <div>
+            <h1 class="text-[#494949]">Ready to get strated?</h1>
+          </div>
+          <div>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer p-10 bg-base-200 text-base-content">
+        <div>
+          <span class="footer-title">Quick Links</span>
+
+          <a class="link link-hover">Quick Links</a>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Insurance</a>
+          <a class="link link-hover">Privacy Policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Our Service</span>
+          <a class="link link-hover">Life Insurance</a>
+          <a class="link link-hover">Car Insurance</a>
+          <a class="link link-hover">Health Insurance</a>
+          <a class="link link-hover">House Insurance</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="font-semibold text-2xl"
+                >Subscribe to our newsletter</span
+              >
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="w-full pr-16 border-b-2 border-black outline-none bg-transparent p-2"
+              />
+              <button class="btn absolute top-0 right-0">
+                <i
+                  class="fa-solid fa-circle-arrow-right fa-3x rounded-full bg-transparent bg-gradient-to-r from-[#F00] to-[#FF8938]"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

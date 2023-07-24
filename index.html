@@ -11,9 +11,79 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font of google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              //   "star-color": "#fbbf24",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- css -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+      .star-color {
+        color: #fbbf24;
+      }
+    </style>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <header></header>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="lg:m-20">
+        <div class="flex lg:flex-row flex-col justify-center items-center">
+          <div class="">
+            <h1 class="font-extrabold lg:text-7xl text-3xl">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="font-medium my-3">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white font-bold"
+            >
+              Explore More <i class="fa-solid fa-arrow-trend-up"></i>
+            </button>
+          </div>
+          <div class="">
+            <img class="w-full" src="./images/banner.png" alt="" />
+            <div
+              class="flex lg:flex-row flex-row gap-3 items-center drop-shadow-lg -mt-16 bg-white w-60 p-5"
+            >
+              <div><i class="fa-solid fa-star text-3xl star-color"></i></div>
+              <div>
+                <h1 class="font-extrabold text-3xl">5.00</h1>
+                <p class="text-base text-[#777]">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
